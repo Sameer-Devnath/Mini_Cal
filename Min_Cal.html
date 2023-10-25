@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini_calc</title>
+</head>
+<body>
+    <input type="text" id="text1" placeholder="Enter 1st Number">
+    <input type="text" id="text2" placeholder="Enter 2nd Number">
+    <br>
+    <input type="button" value="Add" onclick="addNumber()">
+    <input type="button" value="Subtract" onclick="subNumber()">
+    <input type="button" value="Multiply" onclick="mulNumber()">
+    <input type="button" value="Divide" onclick="divNumber()">
+</body>
+<script>
+    function addNumber () { 
+        var f_num = parseInt (document.getElementById ("text1").value); 
+        var s_num = parseInt (document.getElementById ("text2").value); 
+        var sum = f_num + s_num; 
+        // document.getElementById ("res").value = sum;
+        console.log(sum);
+    }
+    function subNumber () { 
+        var f_num = parseInt (document.getElementById ("text1").value); 
+        var s_num = parseInt (document.getElementById ("text2").value); 
+        var sub = f_num - s_num; 
+        console.log(sub);
+    }
+    function mulNumber () { 
+        var f_num = parseInt (document.getElementById ("text1").value); 
+        var s_num = parseInt (document.getElementById ("text2").value); 
+        var mul = f_num * s_num; 
+        console.log(mul);
+    }
+    function divNumber () { 
+        var f_num = parseInt (document.getElementById ("text1").value); 
+        var s_num = parseInt (document.getElementById ("text2").value); 
+        var div = f_num / s_num; 
+        console.log(div);
+    }
+    
+    
+</script>
+</html>
