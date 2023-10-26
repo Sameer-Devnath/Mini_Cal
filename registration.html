@@ -25,8 +25,11 @@
 	<button onclick="resetForm()">RESET FORM</button>
 	<button onclick="resetDisplay()">RESET DISPLAY</button>
 	<script type="text/javascript">
-        let name_1 = document.getElementById("dName");
+        
 		function showName() {
+            let name_1 = document.getElementById("name");
+            let displayName = document.getElementById("Name")
+            displayName.textContent = name_1.value;
             console.log(name_1);
 			// Show filled name inside h1
 		}
