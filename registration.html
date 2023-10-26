@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+</head>
+<body>
+	<input type="text" name="name" id="name">
+	<select id="gender">
+		<option value="">--</option>
+		<option value="male">M</option>
+		<option value="female">F</option>
+	</select>
+	<input type="text" name="email" id="email">
+	<input type="text" name="mobile" id="mobile">
+	<hr>
+	<h1 id="dName">Sameer</h1>
+	<h2 id="dGender">Male</h2>
+	<h3 id="dEmail">sameerdevnath191@gmail.com</h3>
+	<h4 id="dMobile">9876543210</h4>
+	<hr>
+	<button onclick="showName()">NAME</button>
+	<button onclick="showGender()">GENDER</button>
+	<button onclick="showEmail()">EMAIL</button>
+	<button onclick="showMobile()">MOBILE</button>
+	<button onclick="resetForm()">RESET FORM</button>
+	<button onclick="resetDisplay()">RESET DISPLAY</button>
+	<script type="text/javascript">
+        let name_1 = document.getElementById("dName");
+		function showName() {
+            console.log(name_1);
+			// Show filled name inside h1
+		}
+
+        let gen = document.getElementById("dGender");
+		function showGender() {
+            console.log(gen);
+			// Show the selected gender inside h2
+		}
+
+        let mail = document.getElementById("dEmail");
+		function showEmail() {
+            console.log(mail);
+			// Show the filled email inside h3
+		}
+
+        let mob = document.getElementById("dMobile");
+		function showMobile() {
+            console.log(mob);
+			// Show the filled mobile inside h4
+		}
+
+		function resetForm() {
+            console.log("");
+			// Reset all the form elements to default values (blank "")
+		}
+
+		function resetDisplay() {
+			// Reset all the headings (h1, h2, h3, h4) to blank values
+		}
+	</script>
+</body>
+</html>
